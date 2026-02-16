@@ -293,12 +293,6 @@ jobs:
           key: ${{ runner.os }}-ccache-${{ hashFiles('**/*.gradle*', '**/CMakeLists.txt') }}
           restore-keys: |
             ${{ runner.os }}-ccache-
-      - name: ♻️ Restore caches
-        uses: ./.github/actions/expo-caches
-        id: expo-caches
-        with:
-          gradle: 'true'
-          react-native-gradle-downloads: 'true'
       - name: 🧶 Install workspace node modules
         run: yarn install --frozen-lockfile
       - name: Debug yarn integrity
