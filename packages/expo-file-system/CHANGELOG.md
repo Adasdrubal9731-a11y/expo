@@ -9,6 +9,7 @@
 ### 🐛 Bug fixes
 
 - Fix Jest mock to support new `File`/`Directory`/`Paths` API. ([#43005](https://github.com/expo/expo/pull/43005) by [@aleqsio](https://github.com/aleqsio))
+- Fix incorrect return types for `File` and `Directory` static methods. ([#43201](https://github.com/expo/expo/issues/43201) by [@alanhughes](https://github.com/alanhughes))
 
 ### 💡 Others
 
